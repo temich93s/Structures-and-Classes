@@ -48,3 +48,30 @@ print("\n//Поэлементные инициализаторы структу�
 
 let vga = Resolution(width: 640, height: 480)
 print(vga.width, vga.height)
+
+
+//MARK: Структуры и перечисления - типы значения
+print("\n//Структуры и перечисления - типы значения")
+
+let hd = Resolution(width: 1920, height: 1080)
+var cinema = hd
+
+cinema.width = 2048
+print(hd.width, hd.height)
+print(cinema.width, cinema.height)
+
+
+//MARK: Классы - ссылочный тип
+print("\n//Классы - ссылочный тип")
+
+let tenEighty = VideoMode()
+tenEighty.resolution = hd
+tenEighty.interlaced = true
+tenEighty.name = "1080i"
+tenEighty.frameRate = 25.0
+
+let alsoTenEighty = tenEighty
+alsoTenEighty.frameRate = 30.0
+
+print(alsoTenEighty.frameRate)
+print(tenEighty.frameRate)
