@@ -75,3 +75,10 @@ alsoTenEighty.frameRate = 30.0
 
 print(alsoTenEighty.frameRate)
 print(tenEighty.frameRate)
+
+
+//MARK: Операторы тождественности
+print("\n//Операторы тождественности")
+
+print(alsoTenEighty === tenEighty)
+print(alsoTenEighty !== tenEighty)
