@@ -9,6 +9,7 @@ import Foundation
 
 print("Hello, World!")
 
+
 //MARK: Синтаксис объявления
 print("\n//Синтаксис объявления")
 
@@ -30,3 +31,13 @@ print("\n//Экземпляры класса и структуры")
 
 let someResolution = Resolution()
 let someVideoMode = VideoMode()
+
+
+//MARK: Доступ к свойствам
+print("\n//Доступ к свойствам")
+
+print(someResolution.width)
+print(someVideoMode.resolution.width)
+
+someVideoMode.resolution.width = 1280
+print(someVideoMode.resolution.width)
