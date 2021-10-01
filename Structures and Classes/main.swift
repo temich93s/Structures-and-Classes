@@ -23,3 +23,10 @@ class VideoMode {
     var frameRate = 0.0
     var name: String?
 }
+
+
+//MARK: Экземпляры класса и структуры
+print("\n//Экземпляры класса и структуры")
+
+let someResolution = Resolution()
+let someVideoMode = VideoMode()
