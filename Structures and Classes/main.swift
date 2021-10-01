@@ -41,3 +41,10 @@ print(someVideoMode.resolution.width)
 
 someVideoMode.resolution.width = 1280
 print(someVideoMode.resolution.width)
+
+
+//MARK: Поэлементные инициализаторы структурных типов
+print("\n//Поэлементные инициализаторы структурных типов")
+
+let vga = Resolution(width: 640, height: 480)
+print(vga.width, vga.height)
